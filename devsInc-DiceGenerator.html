@@ -1,0 +1,65 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>devsInc: Dice Generator</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=UnifrakturMaguntia&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+
+    <h1>DevsInc</h1>
+    <h2>DICE GENERATOR</h2> 
+    
+    <form>
+        <label for="dice" class="p">Choose a dice:</label>
+        <select id="dice" name="dice" class="p">
+            <option value="d4">D4</option>
+            <option value="d6">D6</option>
+            <option value="d8">D8</option>
+            <option value="d10">D10</option>
+            <option value="d12">D12</option>
+            <option value="d20">D20</option>
+            <option value="d30">D30</option>
+            <option value="d60">D60</option>
+            <option value="d100">D100</option>
+        </select>
+        <br>
+        <br>
+        <br>
+        <button type="button" onclick="rollDice()" class="b">ROLL!</button>
+        <br>  
+        <br>
+        <p class="p">You rolled:</p>
+        <br>
+        <div id="result" class="r"></div> 
+        </form>
+
+        <script>
+            function rollDice(){
+                const diceType = document.getElementById("dice").value;
+                const maxNumber = Number(diceType.substring(1));  
+                const result = Math.floor(Math.random() * maxNumber) + 1;
+                document.getElementById("result").textContent = result;
+
+
+
+                //switch(diceType) {
+                    //case "d4": 
+                    //Math.floor(Math.random() * 4) +1
+                    //break;
+                    
+                } 
+
+            
+        </script>
+
+
+    
+
+  </body>
+</html>

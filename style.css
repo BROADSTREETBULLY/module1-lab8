@@ -1,0 +1,79 @@
+/* 
+Ivory Buff rgb(235, 217, 196)
+Spectrum Red rgb(242, 0, 0)
+Rainette Green rgb(106, 147, 70)
+Aconite Violet rgb(156, 82, 242)
+ */
+
+
+
+body {
+    background-color: rgba(202, 200, 198, 0.491);
+    text-align: center;
+    border-style: solid;
+    border-width: 5px; 
+    border-color: rgb(156, 82, 242);
+    border-radius: 10px;
+    padding: 25px;
+    height: inherit;
+    width: inherit;
+}
+
+h1 {
+    color: rgb(242, 0, 0);
+    font-family: "UnifrakturMaguntia", cursive;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 60px;
+    
+    border-style: solid;
+    border-width: 5px; 
+    border-color: rgb(156, 82, 242);
+    border-radius: 10px;
+    padding: 25px;
+    margin: auto;
+  
+    width: fit-content;
+   
+}
+
+h2 {
+    color: rgb(106, 147, 70);
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 250;
+    font-size: 50px;
+    padding: 10px;
+}
+
+.p {
+    color: rgb(106, 147, 70);
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 20px;
+}
+
+.r {
+    color: rgb(242, 0, 0);
+    font-family: Arial, Helvetica, sans-serif;
+    font-style: normal;
+    font-size: 50px;
+
+    
+    border-style: solid;
+    border-width: 5px; 
+    border-color: rgb(156, 82, 242);
+    border-radius: 10px;
+    margin: auto;
+    padding-top:20px;
+    width: 110px;
+    height: 80px;
+}
+
+.b {
+    color: rgb(242, 0, 0);
+    font-family: Arial, Helvetica, sans-serif;
+    font-style: normal;
+    font-size: 50px;
+    border-color: rgba(106, 147, 70, 0.324);
+    background-color: rgba(106, 147, 70, 0.324);
+    border-radius: 10px;
+}
