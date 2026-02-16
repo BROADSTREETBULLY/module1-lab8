@@ -40,10 +40,14 @@
         </form>
 
         <script>
+            function diceRoll(maxNumber){ 
+                return Math.floor(Math.random() * maxNumber) + 1;
+            }
+
             function rollDice(){
                 const diceType = document.getElementById("dice").value;
                 const maxNumber = Number(diceType.substring(1));  
-                const result = Math.floor(Math.random() * maxNumber) + 1;
+                const result = diceRoll(maxNumber)
                 document.getElementById("result").textContent = result;
 
 
@@ -55,11 +59,22 @@
                     
                 } 
 
+                // tests
+
+                const result = diceRoll(6);
+
+                if (typeof result !== 'number'){
+                    throw new Error('test failed: should return number')
+                }
+
+                if (result <1 || result > 6) {
+                    throw new Error('Test failed: result not in range')
+                }
+
+                console.log('All tests passed!');
+
             
         </script>
-
-
-    
 
   </body>
 </html>
